@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="TalkingData" 
+        version="1.2.2">
+    
+    <name>TalkingData</name>
+    
+    <js-module src="www/TalkingData.js" name="TalkingData">
+        <clobbers target="TalkingData" />
+    </js-module>
+    
+    <!-- ios -->
+    <platform name="ios">
+        
+        <header-file src="src/ios/TalkingDataSMS.h" />
+        <header-file src="src/ios/TalkingDataSMSPlugin.h" />
+        <source-file src="src/ios/TalkingDataSMSPlugin.m" />
+        <header-file src="src/ios/TalkingDataPlugin.h" />
+        <source-file src="src/ios/TalkingDataPlugin.m" />
+        <header-file src="src/ios/TalkingData.h" />
+        <source-file src="src/ios/libTalkingData.a" framework="true" />
+        
+        <config-file target="config.xml" parent="/widget/plugins">
+            <feature name="TalkingData">
+                <param name="ios-package" value="TalkingDataPlugin"/>
+            </feature>
+            <feature name="TalkingDataSMS">
+                <param name="ios-package" value="TalkingDataSMSPlugin"/>
+            </feature>
+        </config-file>
+        
+        <framework src="CoreMotion.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="Security.framework" />
+        <framework src="CFNetwork.framework" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="AdSupport.framework" weak="true" />
+        <framework src="libz.dylib" />
+        
+    </platform>
+</plugin>

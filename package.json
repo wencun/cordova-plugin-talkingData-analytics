@@ -1,0 +1,54 @@
+{
+  "name": "TalkingData",
+  "version": "1.2.2",
+  "description": "Cordova Plugin for TalkingData Analytics SDK.",
+  "cordova": {
+    "id": "TalkingData",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalkingData/TalkingData-Analytics-SDK-Cordova-Plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "TalkingData",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=1.2.2"
+    }
+  ],
+  "author": "lwq6211",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TalkingData/TalkingData-Analytics-SDK-Cordova-Plugin/issues"
+  },
+  "homepage": "https://github.com/TalkingData/TalkingData-Analytics-SDK-Cordova-Plugin/blob/master/README.md"
+  "name": "cordova-plugin-talkingdata-analytics",
+  "version": "1.2.2",
+  "description": "Cordova plugin for TalkingData Analytics SDK integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TalkingData/TalkingData-Analytics-SDK-Cordova-Plugin.git"
+  },
+  "keywords": [
+    "talkingdata",
+    "analytics",
+    "cordova"
+  ],
+  "author": "TalkingData",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TalkingData/TalkingData-Analytics-SDK-Cordova-Plugin/issues"
+  },
+  "homepage": "https://github.com/TalkingData/TalkingData-Analytics-SDK-Cordova-Plugin#readme"
+}
