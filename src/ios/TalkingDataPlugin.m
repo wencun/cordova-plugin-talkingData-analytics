@@ -1,4 +1,4 @@
-/ch/
+//
 //  TalkingDataPlugin.m
 //  TalkingData_PhoneGap
 //
